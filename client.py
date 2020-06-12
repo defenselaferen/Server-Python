@@ -4,7 +4,7 @@ HEADER = 64
 PORT = 5050
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
-SERVER = "192.168.1.26"
+SERVER = input("Enter Server To Type : ")
 ADDR = (SERVER, PORT)
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -19,10 +19,11 @@ def send(msg):
     client.send(message)
     print(client.recv(2048).decode(FORMAT))
 
-send("Client New")
-input()
-send("Hello Every One And You Too!")
-input()
-send("Hello Github.com and Socket")
+i = 0;
+longer = input("How Many You Type Msg : ")
+while i < int(longer):
+	msgToSocket = input("Type Your Msg : ")
+	send(msgToSocket)
+	i = i + 1
 
 send(DISCONNECT_MESSAGE)
