@@ -8,6 +8,7 @@ we also provide an exe to easily run
 
 **Jika Anda Tidak Mau Mendownload anda bisa menkopy script ini**
 Server.py
+
 `
 import socket 
 import threading
@@ -49,7 +50,9 @@ def start():
 print("[STARTING] server is starting...")
 start()
 `
+
 Client.py
+
 `
 import socket
 
