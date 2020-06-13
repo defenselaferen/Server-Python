@@ -52,7 +52,6 @@ def start():
 
 print("[STARTING] server is starting...")
 start()
-`
 Client.py
 `
 import socket
