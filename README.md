@@ -8,11 +8,13 @@ we also provide an exe to easily run
 
 **If You Use Termux**
 `git clone https://github.com/thekotekjournal/Server-Python.git`
-`cd request`
+`cd Server-Python`
+`cd TERMUX`
 `To Run You must run`
 `python server.py`
 `or run`
 `python client.py`
+**If Script TERMUX have error You Cant Use Folder request in this have script to copy**
 
 **If You Use windows You must install git or you cant download zip**
 **If You Install git in you windows**
