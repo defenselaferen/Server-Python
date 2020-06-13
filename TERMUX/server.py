@@ -2,8 +2,8 @@ import socket
 import threading
 import time
 import os
-from colorama import init, Fore, Back, Style
-init(convert=True)
+
+
 
 HEADER = 64
 PORT = 5050
@@ -36,7 +36,7 @@ def handle_client(conn, addr):
 def start():
     server.listen()
     print(f"[LISTENING] Server is listening on {SERVER}")
-    print(Style.RESET_ALL)
+    
     while True:
         conn, addr = server.accept()
         thread = threading.Thread(target=handle_client, args=(conn, addr))
@@ -45,7 +45,7 @@ def start():
 
 
 clear = lambda: os.system("clear")
-print(Fore.RED + "[STARTING] server is starting.")
+print("[STARTING] server is starting.")
 time.sleep(2)
 print("[STARTING] server is starting..")
 time.sleep(2)
@@ -58,6 +58,6 @@ time.sleep(2)
 print("[STARTING] server is starting...")
 time.sleep(3)
 clear()
-print(Style.RESET_ALL)
-print(Fore.GREEN + "[STARTING] Server in Start Now")
+
+print("[STARTING] Server in Start Now")
 start()
