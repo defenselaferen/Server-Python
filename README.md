@@ -7,9 +7,9 @@ we also provide an exe to easily run
 **requirements to run install python**
 
 **Jika Anda Tidak Mau Mendownload anda bisa menkopy script ini**
-Server.py
 
-`
+`Server.py
+
 import socket 
 import threading
 
@@ -49,11 +49,9 @@ def start():
         print(f"[ACTIVE CONNECTIONS] {threading.activeCount() - 1}")
 print("[STARTING] server is starting...")
 start()
-`
 
 Client.py
 
-`
 import socket
 
 HEADER = 64
@@ -82,5 +80,4 @@ while i < int(longer):
 	send(msgToSocket)
 	i = i + 1
 
-send(DISCONNECT_MESSAGE)
-`
+send(DISCONNECT_MESSAGE)`
